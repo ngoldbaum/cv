@@ -55,7 +55,7 @@
 \usepackage{sectsty}
 
 \sectionfont{\rmfamily\bfseries\Large}
-\subsectionfont{\rmfamily\bfseries\itshape\large}
+\subsectionfont{\rmfamily\bfseries\itshape\large}  %chktex 6
 
 % Don't indent paragraphs.
 \setlength\parindent{0em}
@@ -93,24 +93,26 @@
 \bigskip
 
 \begin{minipage}[t]{0.6\textwidth}
-  National Center for Supercomputing Applications \\
-  University of Illinois Urbana-Champaign \\
-  1205 W Clark St \\
-  Urbana, IL 61801
+  2770 JT Coffman Dr \\
+  Champaign, IL 61822
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
-  Phone: (720) 201-2231 \\
-  Office: 4028 NCSA \\
-  Email: \href{mailto:ngoldbau@illinois.edu}{ngoldbau@illinois.edu} \\
+  Phone: (720) 201-2231 \\  %chktex 8
+  Email: \href{mailto:nathan12343@gmail.com}{nathan12343@gmail.com} \\
   Homepage: \href{https://github.com/ngoldbaum}{https://github.com/ngoldbaum}
 \end{minipage}
 
 \section*{Employment}
 
+\subsection*{Recurse Center}
+\begin{itemize}
+  \item [] \textline{Recurser}{Summer 2019}
+\end{itemize}
+
 \subsection*{National Center for Supercomputing Applications}
 \begin{itemize}
-  \item[] \textline{Research Scientist}{2017 -- Present}
-  \item[] \textline{Postdoctoral Researcher, Data Exploration Lab}{2015 -- 2017}
+  \item[] \textline{Research Scientist}{2017 -- 2019}  %chktex 8
+  \item[] \textline{Postdoctoral Researcher, Data Exploration Lab}{2015 -- 2017}  %chktex 8
 \end{itemize}
 
 \section*{Education}
@@ -118,27 +120,16 @@
 \subsection*{University of California Santa Cruz}
 \emph{Dissertation:} ``Star Formation in Graivtationally Unstable Disk
 Galaxies: From Clouds to Disks''\\
-\emph{Committee:} M.~R. Krumholz, J.~X. Prochaska, J. Primack
 \begin{itemize}
-\item[] \textline{Ph.D. Astronomy \& Astrophysics}{2011 -- 2015}
-\item[] \textline{NSF Graduate Research Fellow}{2010 -- 2013}
-\item[] \textline{M.S. Astronomy \& Astrophysics}{2009 -- 2011}
+\item[] \textline{Ph.D. Astronomy \& Astrophysics}{2011 -- 2015}  %chktex 8
+\item[] \textline{NSF Graduate Research Fellow}{2010 -- 2013}  %chktex 8
+\item[] \textline{M.S. Astronomy \& Astrophysics}{2009 -- 2011}  %chktex 8
 \end{itemize}
 
 \subsection*{University of Colorado Boulder}
 \begin{itemize}
-  \item[] \textline{B.A. Physics, \textit{Summa Cum Laude}}{2005 -- 2009}
+  \item[] \textline{B.A. Physics, \textit{Summa Cum Laude}}{2005 -- 2009}  %chktex 8
 \end{itemize}
-
-\section*{Funded Grants}
-
-\subsection*{NSF SI2-SSI 2016}
-Co-Principal Investigator on NSF award \#1663914, \textit{Inquiry-Focused
-  Volumetric Data Analysis Across Scientific Domains: Sustaining and Expanding
-  the yt Community}, totaling \$1.6 Million to UIUC, Columbia University, and
-University of Wisconsin. This grant will expand the usage of yt to fields
-beyond theoretical astrophysics, including meteorology, seismology, geophysics,
-oceanography, observational astronomy, and plasma physics simulations.
 
 \section*{Open Source Contributions\footnote{See
     \href{https://www.openhub.net/accounts/ngoldbaum}{https://www.openhub.net/accounts/ngoldbaum}
@@ -149,25 +140,31 @@ An analysis and visualization toolkit for volumetric data.
 
 \begin{itemize}
 
-\item[] \textline{\bf Core Contributor, Steering Committee Member, and Project Member}{2012 -- Present}
+\item[] \textline{\bf Core Contributor, Steering Committee Member, and Project Member}{2012 -- 2019}  %chktex 8
   \begin{itemize}
-    \item Regularly contributes to project management and planning, including
+    \item Regularly contributed to project management and planning, including
       design and implementation discussions, code review, and user support on
       IRC and mailing lists.
     \item More than 650 merged pull requests
   \end{itemize}
 
-\item[] \textline{\bf Improving support for particle data}{2016 -- Present}
+\item[] \textline{\bf Released \texttt{yt} unit system as a standalone package}{2018 -- 2019}  %chktex 8
   \begin{itemize}
-  \item Redesigned high-level \texttt{yt} API for analyzing and visualizing data
-    produced by smoothed particle hydrodynamics simulations.
+    \item Extracted \texttt{yt.units} module into a standalone package with
+      continuous integration, 100\% test coverage, and extensive example-driven
+      documentation.
+  \end{itemize}
+
+\item[] \textline{\bf Improving support for particle data}{2016 -- 2018}  %chktex 8
+  \begin{itemize}
   \item Substantially improved performance and memory usage for common analysis
     tasks.
+  \item Presented work to the community at a SciPy conference talk.
   \item Worked with community to provide migration path for analysis results
     requiring data produced by old API.\@
   \end{itemize}
 
-\item[] \textline{\bf Symbolic Unit System}{2013 -- 2014}
+\item[] \textline{\bf Symbolic Unit System}{2013 -- 2014}  %chktex 8
   \begin{itemize}
     \item Designed \texttt{YTArray}, an array data container for automatically
       handling unit conversions and runtime validation for dimensional correctness
@@ -183,85 +180,45 @@ An analysis and visualization toolkit for volumetric data.
     \item Enables quick data visualization through an API that focuses on what
       the simulation data physically represents rather than how it is laid out
       on disk.
-    \item Used in more than a dozen published journal articles written by
+    \item Used in dozens of published journal articles written by
       \texttt{yt} users.
-    \item Responsible for the initial design, implementation, documentation, and maintenance.
+    \item Responsible for the initial design, implementation, documentation, and
+      ongoing maintenance.
   \end{itemize}
 
-\end{itemize}
-
-\subsection*{Enzo}
-
-A freely available MPI-parallel hydrodynamics and N-body simulation code with a
-focus on high-order hydrodynamics and a suite of physics packages intended for
-simulations of galaxy formation.
-
-\begin{itemize}
-\item[] \textline{Contributor}{2012 -- Present}
-  \begin{itemize}
-  \item Authored more than 50 merged pull requests
-  \item Regularly participates in developer discussions and user support on mailing lists and IRC.
-  \end{itemize}
-\item[] \textline{Isolated Galaxy Initial Conditions}{2014}
-  \begin{itemize}
-  \item Created an initial conditions generator for a simulation of a disk
-    galaxy similar to the Milky Way
-  \item Open sources a class of disk galaxy models that spent a decade locked in
-    proprietary closed-source codes.
-  \end{itemize}
-\item[] \textline{Active Particles}{2012 -- 2015}
-  \begin{itemize}
-  \item Collaborated on designing and implementing a new infrastructure for
-    particle types that can dynamically alter the simulation as it runs.
-  \end{itemize}
 \end{itemize}
 
 \subsection*{Additional Contributions}
 
 \begin{itemize}
-\item[] {\bf The Grackle}: Added an automated test suite for continuous
-  integration
-\item[] {\bf xonsh}: Added integration with the mercurial version control System
-\item[] {\bf Mercurial}: Several bugfixes and minor improvements
+\item[] {\bf Enzo}: High performance parallel astrophysics simulation code,
+  contributed more than 50 pull requests
+\item[] {\bf Grackle}: Astrophysics thermal chemistry library, Set up an
+  automated test suite and continuous integration
+\item[] {\bf Matplotlib}: Contributed bugfixes and minor improvements in 11
+  merged pull requests.
+\item[] {\bf Mercurial}: Several bugfixes and minor improvements.
+\item[] {\bf xonsh}: Added integration with the mercurial version control System.
 \item[] {\bf Jupyter}: Provided bugfixes and minor improvement to several
   Jupyter projects including \texttt{ipywidgets}, \texttt{IPython}, and
   \texttt{nbconvert}.
 \end{itemize}
 
-\section*{Publications}
+\section*{First Author Publications}
 
 \begin{itemize}
-  \item[] ``GRACKLE: a chemistry and cooling library for astrophysics``, Smith,
-    B.~D., Bryan, G.~L., Glover, S.~C.~O., {\bf Goldbaum, N.~J.}, and 10
-    co-authors, {\it Monthly Notices of the Royal Astronomical Society}, 2017,
-    466, 2217
-  \item[] ``The AGORA High-resolution Galaxy Simulations Comparison
-    Project. II. Isolated Disk Test``, Kim, J.~H.\ and 43 co-authors, including
-    {\bf Goldbaum, N.~J.}, {\it Astrophysical Journal}, 2016, 833, 202
-  \item[] ``Mass Transport and Turbulence in Gravitationally Unstable Disk Galaxies. II:
+  \item[] ``\texttt{unyt}: Handle, manipulate, and convert data with physical
+    units in Python'', {\bf Goldbaum, N.~J.}, ZuHone, J.~A., Turk, M.~J., et
+    al.\ 2018, The Journal of Open Source Software, 3, 809.
+  \item[] ``Mass Transport and Turbulence in Gravitationally Unstable Disk
+    Galaxies II:\@
     The Effects of Star Formation Feedback'', {\bf Goldbaum, N.~J.}, Krumholz, M.~R., \& Forbes,
     J.~C., {\it Astrophysical Journal}, 2016, 827, 28
-  \item[] ``Suppression of Star Formation in Dwarf Galaxies by Photoelectric
-    Grain Heating Feedback'', Forbes, J.~C., Krumholz, M.~R., {\bf Goldbaum,
-      N.~J.}, Dekel, A., {\it Nature}, 2016, 535, 523
-  \item[] ``Mass Transport and Turbulence in Gravitationally Unstable Disk Galaxies. I:
+  \item[] ``Mass Transport and Turbulence in Gravitationally Unstable Disk
+    Galaxies. I:\@
     The Case of Pure Self-Gravity'', {\bf Goldbaum, N.~J.}, Krumholz, M.~R., \& Forbes,
     J.~C., {\it Astrophysical Journal}, 2015, 814, 131
-  \item [] ``Mixing and Transport of Metals by Gravitational Instability-Driven
-    Turbulence'' Petit, A.~C., Krumholz,
-    M.~R., {\bf Goldbaum, N.~J.}, Forbes, J.~C., {\it Monthly Notices of
-      the Royal Astronomical Society}, 2015, 449, 2588
-  \item[] ``\texttt{Enzo} An Adaptive Mesh Refinement Code for Astrophysics'', The
-    Enzo Collaboration and 19 co-authors including {\bf Goldbaum, N.~J.}, {\it
-      Astrophysical Journal Supplement}, 2014, 211, 19
-  \item[] ``The AGORA High-Resolution Galaxy Simulations Comparison Project'',
-    Kim, J.~H.\ and 45 co-authors, including {\bf Goldbaum, N.~J.}, {\it
-      Astrophysical Journal Supplement}, 2014, 210, 14
-  \item[] ``Dwarf Galaxies with Ionizing Radiation Feedback. II. Spatially
-    Resolved Star Formation Relation'', Kim, J.~H., Krumholz, M.~R., Wise,
-    J.~H., Turk, M.~J., {\bf Goldbaum, N.~J.}, Abel, T., {\it Astrophysical Journal},
-    2013, 779, 8
-  \item[] ``The Global Evolution of Giant Molecular Clouds II: The Role of
+  \item[] ``The Global Evolution of Giant Molecular Clouds II:\@ The Role of
     Accretion'', {\bf Goldbaum, N.~J.}, Krumholz, M.~R., Matzner, C.~D., McKee,
     C.~F.\ {\it Astrophysical Journal}, 2011, 738, 101
   \item[] ``The Intensity Profile of the Solar Supergranulation'', {\bf Goldbaum,
@@ -277,20 +234,10 @@ simulations of galaxy formation.
   {\bf Goldbaum, N.~J.}, Lang, M.~M., SciPy, 2017
 \item[] ``Domain Specific Visualization'', {\bf Goldbaum, N.~J.}, PlotCon NYC,
   2016
-\item[] ``Mass Transport and ISM Phase Balance in Simulations of Gravitationally
-  Unstable Disk Galaxies'', {\bf Goldbaum, N.~J.}, Great Lakes Cosmology and
-  Galaxies, 2016
 \item[] ``Publicly Releasing a Large Simulation Dataset'', {\bf Goldbaum,
     N.~J.}, Python in Astronomy Conference, 2016
 \item[] ``\texttt{yt}: Volumetric Data Analysis'', {\bf Goldbaum, N.~J.} on
   behalf of the \texttt{yt} project, SciPy conference, 2014
-\item[] ``Using \texttt{yt} With \texttt{Athena} Data'', {\bf Goldbaum, N.~J.},
-  HIPACC Galaxy formation summer school, 2013
-\item[] ``From Gas to Stars: Simulating a Population of GMCs'', {\bf Goldbaum,
-    N.~J.}, Krumholz M.~R., 2013, \textit{Proc. IAUS 292}, 91
-\item[] ``The Role of Accretion in the Evolution of Giant Molecular Clouds'',
-  {\bf Goldbaum, N.~J.}, Krumholz M.~R., 2010, \textit{From Stars to Galaxies},
-  J. Tan \& S. Van Loo (eds.)
 
 \end{itemize}
 
