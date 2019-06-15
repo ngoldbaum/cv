@@ -44,8 +44,8 @@
 % Custom section fonts
 \usepackage{sectsty}
 
-\sectionfont{\rmfamily\bfseries\Large}
-\subsectionfont{\rmfamily\bfseries\itshape\large}  %chktex 6
+\sectionfont{\rmfamily\bfseries\normalsize}
+\subsectionfont{\rmfamily\bfseries\itshape\small}  %chktex 6
 
 % Don't indent paragraphs.
 \setlength\parindent{0em}
@@ -75,7 +75,7 @@
 \begin{document}
 
 % Place name at left
-{\large \bf \name}
+{\huge \bf \name}
 
 % Alternatively, print name centered and bold:
 %\centerline{\huge \bf \name}
@@ -98,13 +98,10 @@
 \begin{itemize}
   \item [] \textline{Participant}{May 2019 -- Present}
     \begin{itemize}
-      \item [] Transitioned from academia to industry by attending a
-        self-directed educational retreat. Explored concepts in algorithms, data
-        structures, and theoretical computer science by implementing a client
-        for the Mercurial version control system in Rust. Wrote blog posts about
-        concepts in distributed version control systems, binary data formats
-        used by Mercurial, the Rust programming languages, and general
-        programming topics.
+      \item Transitioned from academia to industry by attending a
+        self-directed educational retreat.
+      \item Created and blogged about a rudimentary client for the Mercurial
+        version control system in Rust.
     \end{itemize}    
 \end{itemize}
 
@@ -113,16 +110,16 @@
   \item[] \textline{Postdoctoral Researcher}{August 2015 -- April 2017}  \textline{Research
     Scientist}{May 2017 -- April 2019} %chktex 8
   \begin{itemize}
-    \item [] Primary maintainer for The \texttt{yt} Project, an open source toolkit
-      for analysis and visualization of 3D simulation data in Python. Regularly
-      contributed to project management and planning, including design and
-      implementation discussions, code review, and supporting users with a range
-      of technical expertise via live chat, mailing lists, and in-person
-      workshops. More than 650 merged pull requests for \texttt{yt} alone. Many
+    \item Primary maintainer for The \texttt{yt} Project, an open source toolkit
+      for analysis and visualization of 3D simulation data in Python.
+    \item More than 650 merged pull requests for \texttt{yt} alone. Many
       other merged pull requests in popular open source projects such as
       \texttt{Matplotlib}, \texttt{Mercurial}, \texttt{xonsh},
       \texttt{conda-forge}, \texttt{Homebrew}, \texttt{h5py}, \texttt{IPython},
       \texttt{ipywidgets}, and \texttt{nbconvert}.
+    \item Participated in project planning and led the effort to triage code
+      review tasks and issue reports, led user and developer workshops, and
+      participated on the project steering committee.
   \end{itemize}
 
 \end{itemize}
@@ -133,46 +130,44 @@
 
   \item[] {\bf \texttt{unyt}}
     \begin{itemize}
-      \item [] A Python library for working with data that has physical
-        units. Reworked \texttt{yt.units} module into a standalone \texttt{unyt}
-        package with continuous integration, 100\% test coverage, and extensive
-        example-driven documentation with entry points for users doing quick
-        calculations and users who want to extensively use \texttt{unyt} in an
-        application. Achieved substantially improved performance while
-        simultaneously shipping user-requested features like automatic unit
-        simplification and automatic unit name canonicalization.
+      \item A Python library for working with data that has physical
+        units.
+      \item 100\% test coverage along with extensive documentation for use as a
+        command-line helper for quick calculations and as a component of a
+        larger Python project.
     \end{itemize}
   \item[] {\bf Improved support for particle data in \texttt{yt}}
     \begin{itemize}
-      \item [] Improved performance and memory usage for common analysis tasks by
+      \item Improved performance and memory usage for common analysis tasks by
         10x to 100x by leveraging a novel system for spatially indexing particle
-        data via EWAH-compressed Morton codes. Enabled production science
-        pipelines leveraging gigabyte and terabyte scale simulation
-        outputs. Worked with community to provide migration path for analysis
-        results requiring data produced by old API.\@ Presented work to the
-        community at a SciPy conference talk.
+        data via EWAH-compressed Morton codes.
+      \item Enabled production data pipelines leveraging gigabyte and
+        terabyte scale simulation outputs.
+      \item Presented work to community at a SciPy conference talk.
     \end{itemize}
   \item[] {\bf\texttt{PlotWindow} Plotting Interface}
     \begin{itemize}
-      \item [] Created an interface for visualizing slices and projections in
-        \texttt{yt}. Enables quick data visualization through an API that
+      \item Created an interface for visualizing slices and projections in
+        \texttt{yt} by wrapping \texttt{Matplotlib}.
+      \item Enables quick data visualization through an API that
         focuses on what the simulation data physically represent rather than how
-        they are laid out on disk. Used in dozens of published journal articles
+        they are laid out on disk.
+      \item Used in dozens of published journal articles
         written by \texttt{yt} users.
     \end{itemize}
 
 \end{itemize}
 
+\section*{Skills}
+
+\texttt{Python}, \texttt{Cython}, \texttt{C/C++}, \texttt{Rust}, \texttt{NumPy}, \texttt{Matplotlib},
+\texttt{Jupyter}, \texttt{Git}, \texttt{GitHub}, \texttt{Mercurial}
 
 \section*{Education}
 
 \subsection*{University of California Santa Cruz}
-\emph{Dissertation:} ``Star Formation in Gravitationally Unstable Disk
-Galaxies: From Clouds to Disks''\\
 \begin{itemize}
 \item[] \textline{Ph.D. Astronomy \& Astrophysics}{August 2011 -- July 2015}  %chktex 8
-%\item[] \textline{NSF Graduate Research Fellow}{August 2010 -- August 2013}  %chktex 8
-\item[] \textline{M.S. Astronomy \& Astrophysics}{August 2009 -- July 2011}  %chktex 8
 \end{itemize}
 
 \subsection*{University of Colorado Boulder}
