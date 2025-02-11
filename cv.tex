@@ -83,31 +83,74 @@
 
 \bigskip
 
-\begin{minipage}[t]{0.6\textwidth}
-  2770 JT Coffman Dr \\
-  Champaign, IL 61822
-\end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
   Phone: (720) 201-2231 \\  %chktex 8
   Email: \href{mailto:nathan.goldbaum@gmail.com}{nathan.goldbaum@gmail.com} \\
   Homepage: \href{ngoldbaum.github.io}{ngoldbaum.github.io}
 \end{minipage}
 
+\section*{Major Open Source Contributions}
+
+\begin{itemize}
+
+  \item[] \textline{\texttt{NumPy}}{\href{https://numpy.org}{https://numpy.org}}
+    \begin{itemize}
+      \item Foundational library for multidimensional arrays in Python.
+      \item Joined maintainer team in 2023.
+      \item Author of the variable-width string array data type added in
+        \texttt{NumPy} 2.0 and described in
+        \href{https://numpy.org/neps/nep-0055-string_dtype.html}{NEP 55}.
+      \item Led effort to support free-threaded Python in \texttt{NumPy} 2.1 and
+        primary maintainer for the free-threaded build.
+      \item More than 200 merged pull requests. Thirteenth most prolific all-time contributor by commit count.
+    \end{itemize}
+
+  \item[] \textline{\texttt{PyO3}}{\href{https://pyo3.rs}{https://pyo3.rs}}
+    \begin{itemize}
+      \item The Rust bindings for the Python interpreter.
+      \item Joined maintainer team in 2024.
+      \item Led effort to support free-threaded Python in \texttt{PyO3} 0.23 and
+        primary maintainer for the free-threaded build.
+      \item More than 40 merged pull requests.
+    \end{itemize}
+
+  \item[] \textline{\bf \texttt{PyTorch}}{\href{https://pytorch.org}{https://pytorch.org}}
+    \begin{itemize}
+      \item Contributed the \texttt{\_\_torch\_function\_\_} mechanism for
+        extending PyTorch in downstream libraries and many bugfixes.
+      \item 20 merged pull requests.
+    \end{itemize}
+
+    
+  \item[] \textline{\bf \texttt{unyt}}{\href{https://github.com/yt-project/unyt/}{\small https://github.com/yt-project/unyt/}}
+    \begin{itemize}
+      \item A Python library for working with data that has physical
+        units.
+      \item Primary author and original maintainer.
+      \item Extensively documented and tested Python codebase that can turns a
+        Python prompt into a full-featured calculator for problems with physical
+        units.
+      \item Used in production for scientific and engineering data processing
+        pipelines.
+    \end{itemize}
+
+\end{itemize}
+
 \section*{Experience}
 \begin{itemize}
-  \item [] {\bf Quansight}
-  \item [] \textline{Software Engineer}{October 2019 -- Present}
+  \item [] \textline{{\bf Quansight Labs}, Senior Software Engineer}{November 2022 - Present}
     \begin{itemize}
-      \item Consulting on client projects and training in the Python data
-        science stack.
+      \item Improving and maintaining the scientific Python ecosystem.
     \end{itemize}
-  \item [] {\bf Recurse Center}
-  \item [] \textline{Participant}{May 2019 -- August 2019}
+  \item [] \textline{{\bf Quansight}, Software Engineer}{October 2019 -- March 2020}
     \begin{itemize}
-    \item Transitioned from academia to industry by attending a
-      self-directed educational retreat.
-    \item Learned the \texttt{Rust} programming language by blogging about
-      incrementally building a \texttt{Rust} CLI application.
+      \item Worked with \texttt{PyTorch} team to handle community-reported bugs
+        and feature requests.
+    \end{itemize}
+  \item [] \textline{{\bf Recurse Center}}{May 2019 -- August 2019}
+    \begin{itemize}
+    \item Gained facility in the \texttt{Rust} programming language by blogging
+      about self-directed learning experiences.
     \end{itemize}    
     
   \item [] {\bf National Center for Supercomputing Applications}
@@ -116,56 +159,8 @@
     \begin{itemize}
     \item Primary maintainer for The \texttt{yt} Project, an open toolkit
       for working with 3D simulation data.
-    \item More than 850 merged pull requests for \texttt{yt} alone. Many
-      others merged in popular open source projects such as
-      \texttt{Matplotlib}, \texttt{Mercurial}, \texttt{xonsh},
-      \texttt{conda-forge}, \texttt{Homebrew}, \texttt{h5py}, \texttt{IPython},
-      \texttt{ipywidgets}, and \texttt{nbconvert}.
-    \item Triaged code review tasks and issue reports. Planned and led user
-      workshops and developer sprints.
     \end{itemize}
 \end{itemize}
-
-\section*{Projects}
-
-\begin{itemize}
-
-  \item[] \textline{\bf
-    \texttt{unyt}}{\href{https://github.com/yt-project/unyt/}{\small https://github.com/yt-project/unyt/}}
-    \begin{itemize}
-      \item A Python library for working with data that has physical
-        units.
-      \item 100\% test coverage along with extensive documentation for use as a
-        command-line helper for quick calculations and as a component of a
-        larger Python project.
-    \end{itemize}
-  \item[] \textline{\bf Improved support for particle data in
-    \texttt{yt}}{\scriptsize \href{https://ytep.readthedocs.io/en/master/YTEPs/YTEP-0032.html}{https://ytep.readthedocs.io/en/master/YTEPs/YTEP-0032.html}}
-    \begin{itemize}
-      \item Improved performance and memory usage for common analysis tasks by
-        10x to 100x by leveraging a novel system for spatially indexing particle
-        data via EWAH-compressed Morton codes.
-      \item Enabled production data pipelines leveraging gigabyte and
-        terabyte scale simulation outputs.
-      \item Presented work to community at a SciPy conference talk.
-    \end{itemize}
-  \item[] \textline{\bf\texttt{PlotWindow} Plotting Interface}{\href{https://yt-project.org/doc/visualizing/plots.html}{https://yt-project.org/doc/visualizing/plots.html}}
-    \begin{itemize}
-      \item Created an interface for visualizing slices and projections in
-        \texttt{yt} by wrapping \texttt{Matplotlib}.
-      \item Enables quick data visualization through an API that
-        focuses on what the simulation data physically represent rather than how
-        they are laid out on disk.
-      \item Used in dozens of published journal articles
-        written by \texttt{yt} users.
-    \end{itemize}
-
-\end{itemize}
-
-\section*{Skills}
-
-\texttt{Python}, \texttt{Cython}, \texttt{C/C++}, \texttt{Rust}, \texttt{NumPy}, \texttt{Matplotlib},
-\texttt{Jupyter}, \texttt{Git}, \texttt{GitHub}, \texttt{Mercurial}, \LaTeX\
 
 \section*{Education}
 
